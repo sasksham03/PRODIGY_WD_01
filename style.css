@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* Section base styling */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(25, 25, 25, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1607082349566-187342175e2c?auto=format&fit=crop&w=1470&q=80');
+}
+
+/* About Section */
+.about {
+  background-image: url('https://images.unsplash.com/photo-1617791160536-f0b8676c58cd?auto=format&fit=crop&w=1470&q=80');
+}
+
+/* Hampers Section */
+.hampers {
+  background-image: url('https://images.unsplash.com/photo-1604242692769-9de82a816a6c?auto=format&fit=crop&w=1470&q=80');
+}
+
+/* Contact Section */
+.contact {
+  background-image: url('https://images.unsplash.com/photo-1611967164521-1b19af85c3b9?auto=format&fit=crop&w=1470&q=80');
+}
+
+/* Contact Form */
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  background: #ffc107;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #e0a800;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #bbb;
+  font-size: 14px;
+}
